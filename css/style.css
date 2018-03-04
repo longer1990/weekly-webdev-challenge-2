@@ -37,7 +37,10 @@ a {
 
 .navigation__list {
   display: flex;
+  transition: all .5s ease-in-out;
 }
+
+
 
 .navigation__link {
   position: relative;
@@ -134,10 +137,13 @@ a {
     display: block;
     position: absolute;
     top: 145px;
-    right: 0;
+    left: 100%;
     background-color:#e6e6e6;
     width: 100%;
     text-align: center;
+  }
+  .navigation__list--slide {
+    left: 0;
   }
   .navigation__link--active {
     border-top: none;

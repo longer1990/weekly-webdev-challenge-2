@@ -128,18 +128,17 @@ a {
     display: block;
   }
   .navigation__item {
-    padding: 15px 5px;
+    padding: 20px 5px;
   }
   .navigation__list {
     display: block;
     position: absolute;
     top: 145px;
     right: 0;
-    background-color: ;
+    background-color:#e6e6e6;
     width: 100%;
     text-align: center;
   }
-
   .navigation__link--active {
     border-top: none;
   }

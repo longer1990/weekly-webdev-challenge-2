@@ -157,7 +157,6 @@ a {
 
 .home {
   background: url('../img/strawberry.png') 65% 5%;
-  background-size: cover;
   height: 100vh;
   position: relative;
 }

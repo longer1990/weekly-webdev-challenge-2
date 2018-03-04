@@ -132,13 +132,14 @@ a {
   }
   .navigation__item {
     padding: 20px 5px;
+    border-bottom: 1px solid #b1b1b1;
   }
   .navigation__list {
     display: block;
     position: absolute;
     top: 145px;
     left: 100%;
-    background-color:#e6e6e6;
+    background-color:#eeecec;
     width: 100%;
     text-align: center;
   }

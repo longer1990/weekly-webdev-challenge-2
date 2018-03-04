@@ -156,7 +156,7 @@ a {
 /* hero styles */
 
 .home {
-  background: url('../img/strawberry.png') 50% 5%;
+  background: url('../img/strawberry.png') 65% 5%;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -237,6 +237,6 @@ a {
 
 @media all and (max-width: 768px) {
   .home {
-    background-position: center top;
+    background-position: 58% top;
     background-size: inherit;
   }

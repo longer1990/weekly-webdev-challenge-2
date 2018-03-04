@@ -5,11 +5,11 @@
 });
 */
 
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const hamburgerElement = document.querySelector('.hamburger-icon__element');
+const hamburgerBtn = document.querySelector('.hamburger-btn');
+const hamburgerElement = document.querySelector('.hamburger-btn__element');
 const nav = document.querySelector('.navigation__list');
 
-hamburgerIcon.addEventListener('click', function() {
+hamburgerBtn.addEventListener('click', function() {
     hamburgerElement.classList.toggle('clicked');
     nav.classList.toggle('navigation__list--slide')
 });

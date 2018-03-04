@@ -40,8 +40,6 @@ a {
   transition: all .5s ease-in-out;
 }
 
-
-
 .navigation__link {
   position: relative;
   margin-left: 20px;
@@ -72,9 +70,9 @@ a {
   width: 100%;
 }
 
-/* hamburger icon */
+/* hamburger btn */
 
-.hamburger-icon {
+.hamburger-btn {
   display: none;
   width: 40px;
   height: 40px;
@@ -82,9 +80,9 @@ a {
   cursor: pointer;
 }
 
-.hamburger-icon__element,
-.hamburger-icon__element:before,
-.hamburger-icon__element:after {
+.hamburger-btn__element,
+.hamburger-btn__element:before,
+.hamburger-btn__element:after {
   width: 100%;
   height: 4px;
   background-color: #000;
@@ -93,41 +91,41 @@ a {
   transition: all .2s ease-in-out;
 }
 
-.hamburger-icon__element {
+.hamburger-btn__element {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.hamburger-icon__element:before,
-.hamburger-icon__element:after {
+.hamburger-btn__element:before,
+.hamburger-btn__element:after {
   content: "";
 }
 
-.hamburger-icon__element:before {
+.hamburger-btn__element:before {
   top: -8px;
 }
 
-.hamburger-icon__element:after {
+.hamburger-btn__element:after {
   top: 8px;
 }
 
-.hamburger-icon__element.clicked:before {
+.hamburger-btn__element.clicked:before {
   top: 0px;
   transform: rotate(135deg);
 }
 
-.hamburger-icon__element.clicked:after {
+.hamburger-btn__element.clicked:after {
   top: 0px;
   transform: rotate(-135deg);
 }
 
-.hamburger-icon__element.clicked {
+.hamburger-btn__element.clicked {
   background-color: transparent;
 }
 
 @media all and (max-width: 768px) {
-  .hamburger-icon {
+  .hamburger-btn {
     display: block;
   }
   .navigation__item {
@@ -197,3 +195,48 @@ a {
   text-shadow:0px 1px 0px #2f6627;
   box-shadow: 0px 2px 6px 1px #9a9a9c;
 }
+
+.scroll-down {
+  display: inline-block;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid black;
+  width: 24px;
+  height: 40px;
+  border-radius: 40%;
+}
+
+.scroll-down:before {
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 5px;
+  height: 5px;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: scroll-down 1.5s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+ 0% {
+   top: 2px;
+   opacity: 0;
+ }
+ 80% {
+   opacity: 1;
+ }
+ 100% {
+   top: 25px;
+   opacity: 0;
+ }
+}
+
+@media all and (max-width: 768px) {
+  .home {
+    background-position: center top;
+    background-size: inherit;
+  }

@@ -6,7 +6,7 @@
 */
 
 
-window.onload = function() {
+window.addEventListener('load', function(){
   const hamburgerBtn = document.querySelector('.hamburger-btn');
   const hamburgerElement = document.querySelector('.hamburger-btn__element');
   const nav = document.querySelector('.navigation__list');
@@ -15,4 +15,4 @@ window.onload = function() {
       hamburgerElement.classList.toggle('clicked');
       nav.classList.toggle('navigation__list--slide')
 });
-}
+}) 

@@ -16,6 +16,13 @@ a {
   padding: 0 15px;
 }
 
+
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* main header */
 
 .navigation {
@@ -27,12 +34,6 @@ a {
   right: 0;
   left: 0;
   z-index: 10;
-}
-
-.container--flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navigation__list {
@@ -150,10 +151,9 @@ a {
   .navigation__link:before {
     display: none;
   }
-
 }
 
-/* hero styles */
+/* home styles */
 
 .home {
   background: url('../img/strawberry.png') 65% 5%;
@@ -238,3 +238,27 @@ a {
     background-position: 58% top;
     background-size: inherit;
   }
+}
+/* about us styles */
+
+.about {
+  background: url('../img/raspberries.png') #02b6b6 no-repeat 25% 20%;
+  min-height: 700px;
+}
+.about__info {
+  max-width: 500px;
+  float: right;
+  margin-top: 180px;
+  padding-bottom: 230px;
+}
+
+.about__heading {
+  font-size: 90px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about__text {
+  color: #fff;
+  line-height: 1.6em;
+}

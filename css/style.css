@@ -224,7 +224,7 @@ a {
    top: 2px;
    opacity: 0;
  }
- 80% {
+ 50% {
    opacity: 1;
  }
  100% {
@@ -242,14 +242,17 @@ a {
 /* about us styles */
 
 .about {
-  background: url('../img/raspberries.png') #02b6b6 no-repeat 25% 20%;
+  background: url('../img/raspberries.png') #02b6b6 no-repeat 20% center;
+  background-size: 48% auto;
   min-height: 700px;
+  height:
 }
+
 .about__info {
   max-width: 500px;
+  width: 43%;
   float: right;
-  margin-top: 180px;
-  padding-bottom: 230px;
+  padding: 180px 0 230px 0;
 }
 
 .about__heading {

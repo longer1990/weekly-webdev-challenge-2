@@ -294,3 +294,9 @@ a {
    line-height: 1em;
  }
 }
+
+@media all and (max-width: 320px) {
+  .about__heading {
+    font-size: 70px;
+  }
+}

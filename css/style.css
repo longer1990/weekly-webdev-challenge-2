@@ -243,14 +243,13 @@ a {
 
 .about {
   background: url('../img/raspberries.png') #02b6b6 no-repeat 20% center;
-  background-size: 48% auto;
+  background-size: 45% auto;
   min-height: 700px;
-  height:
 }
 
 .about__info {
   max-width: 500px;
-  width: 43%;
+  width: 100%;
   float: right;
   padding: 180px 0 230px 0;
 }
@@ -264,4 +263,34 @@ a {
 .about__text {
   color: #fff;
   line-height: 1.6em;
+}
+
+@media all and (min-width: 1500px) {
+  .about {
+    background-size: auto;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .about {
+    padding-bottom: 100px;
+    background-position: bottom;
+  }
+  .about__info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    padding: 40px 30px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about {
+    background-size: 55% auto;
+  }
+ .about__heading {
+   font-size: 80px;
+   line-height: 1em;
+ }
 }

@@ -328,8 +328,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
   color: #262626;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
 }

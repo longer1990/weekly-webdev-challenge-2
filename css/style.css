@@ -303,6 +303,10 @@ a {
 
 /* services styles */
 
+.services {
+  background: #70bfff;
+}
+
 .services__wrapper {
   display: flex;
   justify-content: space-between;
@@ -312,12 +316,11 @@ a {
 
 .services_bg {
   background: url('../img/tomatoes.png') center right no-repeat;
-  background-size: cover;
   background-size: 85% auto;
   max-height: 525px;
   max-width: 540px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 45px;
   display: flex;
   align-items: center;
 }
@@ -326,14 +329,11 @@ a {
   font-size: 90px;
   font-weight: 700;
   color: #fff;
-}
-
-.services {
-  background: #70bfff;
+  line-height: 1.6em;
 }
 
 .services__items {
-  padding: 180px 0 150px 100px;
+  padding: 120px 15px 100px 100px;
 }
 
 .service__item {
@@ -370,4 +370,10 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 992px) {
+  .services__wrapper {
+    flex-direction: column;
+  }
 }

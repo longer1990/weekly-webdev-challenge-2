@@ -303,6 +303,31 @@ a {
 
 /* services styles */
 
+.services__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.services_bg {
+  background: url('../img/tomatoes.png') center right no-repeat;
+  background-size: cover;
+  background-size: 85% auto;
+  max-height: 525px;
+  max-width: 540px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.services__heading {
+  font-size: 90px;
+  font-weight: 700;
+  color: #fff;
+}
+
 .services {
   background: #70bfff;
 }

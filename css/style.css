@@ -322,12 +322,14 @@ a {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .services__heading {
   font-size: 90px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
   line-height: 1.6em;
 }
 
@@ -380,6 +382,9 @@ a {
     background-position: center;
     background-size: contain;
     margin-top: 20px;
+  }
+  .services__heading {
+    font-size: 3.5em;
   }
   .services__items {
     padding: 40px 5px 54px 5px;

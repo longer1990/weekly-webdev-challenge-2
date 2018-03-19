@@ -283,6 +283,7 @@ a {
         transform: translateX(-50%);
         max-width: 100%;
         padding: 40px 30px;
+        text-align: center;
     }
 }
 
@@ -485,6 +486,12 @@ a {
   transform: scale(0.95);
 }
 
+@media all and (max-width: 992px) {
+  .gallery__heading {
+    font-size: 3.5em;
+  }
+}
+
 @media all and (max-width: 480px) {
   .gallery__heading {
     font-size: 3.5em;
@@ -589,7 +596,10 @@ a {
   }
 }
 
-@media all and (max-width: 804px) {
+@media all and (max-width: 768px) {
+  .subscribe__input {
+    margin-right: 0;
+  }
   .subscribe__btn {
     margin-top: 25px;
   }

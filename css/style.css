@@ -130,7 +130,7 @@ a {
         display: block;
     }
     .navigation__item {
-        padding: 20px 5px;
+
         border-bottom: 1px solid #b1b1b1;
     }
     .navigation__list {
@@ -141,6 +141,11 @@ a {
         background-color: #faf9fb;
         width: 100%;
         text-align: center;
+    }
+    .navigation__link {
+      display: block;
+      padding: 20px 5px;
+      margin: 0;
     }
     .navigation__list--slide {
         left: 0;
